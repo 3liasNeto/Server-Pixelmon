@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+.siteManha:root{
+background-image: url(./img/background-site-manha.png);
+--form-bgcolor:white;
+--font-textcolor:black;
+--bglinear:linear-gradient(to right, #fac123, #faaf23, #fa8b23, #fa7223);
+--bgshadow:0 4px 15px 0 rgba(253, 211, 21, 0.75);
+}
+
+.siteNoite:root{
+background-image: url(./img/background-site-noite.png);
+--form-bgcolor:rgb(91 17 92);
+--font-textcolor:white;
+--bglinear: linear-gradient(to right, #ad00b1, #ff00e1, #f100d5,#950197);
+--bgshadow: 0 4px 15px 0 rgb(255 0 224 / 75%);
+}
+
+.Login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.formLogin{
+  display: flex;
+  flex-direction: column;
+  padding: 4.3rem;
+  background-color:var(--form-bgcolor);
+  padding-bottom: 2.3em;
+}
+
+.fieldEmail {
+  padding-bottom: 12px;
+}
+
+.labelEmail {
+  font-family: 'Helvética', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--font-textcolor);
+}
+
+.divSpanLabel__div {
+  display: flex;
+  width: 330px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 4px;
+  border: 1px solid rgb(211 211 211);
+}
+.divSpanLabel__div .divInputEmail{
+  padding: 0rem;
+}
+
+.divSpanLabel__div:hover {
+  border-color: rgb(150, 150, 150);
+  box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
+  }
+
+.divInputEmail +.divSpanLabel__div:focus{
+  border-color: black;
+}
+
+.divInputEmail {
+  display: inline-flex;
+  border: none;
+  width: 345px;
+  height: 30px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.divInputEmail::placeholder{
+  font-size: 14px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+}
+
+.divSpanEmail {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.divSpanEmail__check {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.uil-check {
+  font-size: 24px;
+  display: none;
+}
+.uil-exclamation-triangle{
+  display: none;
+  font: 24px;
+  color: red;
+}
+
+#iconCheck{
+display: flex;
+color: rgb(0, 218, 0);
+}
+
+.uil-at {
+  font-size: 24px;
+}
+
+.fieldSenha {
+  padding-bottom: 12px;
+}
+
+.labelSenha {
+  font-family: 'Helvética', sans-serif;
+  font-weight: 600;
+  color: var(--font-textcolor);
+  font-size: 15px;
+}
+
+.divSpanLabel__divSenha {
+  display: flex;
+  width: 330px;
+  border: 1px solid rgb(211 211 211);
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 4px;
+}
+
+.divSpanLabel__divSenha:hover {
+border-color: rgb(150, 150, 150);
+box-shadow: 0px 1px 2px rgba(172, 172, 172, 0.75);
+}
+
+
+.uil-key-skeleton-alt {
+  font-size: 25px;
+}
+
+.divInputSenha {
+  display: inline-flex;
+  border: none;
+  width: 345px;;
+  height: 30px;
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+}
+
+.divInputSenha::placeholder{
+  font-size: 14px;
+  font-family: 'Helvética', sans-serif;
+  font-weight: 400;
+}
+
+.divSpanSenha {
+  display: flex;
+  align-self: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+
+.divSpanSenha__eye{
+display: flex;
+cursor: pointer;
+align-self: center;
+padding-right: 0.5rem;
+padding-left: 0.5rem;
+}
+
+.eyePassword{
+    width: 24px;
+}
+
+/* CheckBox */
+.div_RCheckBox{
+  font-family: 'Helvética', sans-serif;
+  font-size: 13px;
+  display: inline-flex;
+  justify-content: space-between;
+  color: var(--font-textcolor);
+}
+
+
+.label_Checkbox{
+  display: flex;
+}
+
+.checkboxText{
+  color: var(--font-textcolor);
+}
+
+.checkboxText:hover{
+  color: rgb(253, 211, 21);
+}
+
+.cnf_Checkbox{
+background-color: gray;
+border-radius: 2px;
+width: .9rem;
+height: .9rem;
+}
+
+/* Button */
+.divBtn{
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btnLogin{
+background-image: var(--bglinear);
+box-shadow: var(--bgshadow);
+cursor: pointer;
+font-family: 'Helvética', sans-serif;
+font-weight: 400;
+font-size: 17px;
+color: white;
+border: none;
+width: 200px;
+height: 45px;
+letter-spacing: 1px;
+background-size: 300% 100%;
+border-radius: 20px;
+-o-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+
+.btnLogin:hover{
+  outline: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  transform: scale(.98);
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
+}
+
+
+
+/* Nova Conta */
+.divNConta{
+    display: inline-flex;
+    justify-content: center;
+    font-family: 'Helvética', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--font-textcolor);
+    padding-bottom: 12px;
+}
+
+/* Nova Conta Entra outras formas */
+.divANConta{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--font-textcolor);
+  font-size: 14px;
+  font-family: 'Helvética', sans-serif;
+  margin-bottom: 12px;
+
+}
+
+.labelNConta{
+  font-family: 'Helvética', sans-serif;
+}
+
+.divLSpan{
+display: flex;
+
+}
+
+.labelNConta_icon{
+display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.divANConta_icon{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.divNConta_linkGoogle{
+  margin-right: 26px;
+  
+}
+
+.googleReg{
+  width: 40px;
+
+}
+
+.facebookReg{
+  width: 40px;
+}
+
+.LinkNAcc{
+  color: var(--font-textcolor);
+  font-size: 16px;
+}
+
+.LinkNAcc:hover{
+  color: rgb(253, 211, 21);
+  text-shadow: 1px 1px orange;
+}
