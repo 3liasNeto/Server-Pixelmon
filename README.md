@@ -31,4 +31,16 @@ Esse repositorio tem a utilidade de contar como foi criado o meu server de pixel
 
 
 <img style="border-radius: 50%" src="https://user-images.githubusercontent.com/87040427/174500298-54f948ed-d7f6-4103-a069-66c1286a8308.jpg" width="120px">
-<p align="center"> Sobre </p>
+<p> Sobre </p>
+<p> Sou um jovem programador de 18 anos iniciando essa vida com codigos, e esse daqui e mais um dos projetos que planejo dar continuidade de agora pra frente </p>
+<a href="">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+</a>
+
+<a href="">
+<img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white">
+</a>
+
+<a href="">
+<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
+</a>
