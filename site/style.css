@@ -17,6 +17,18 @@ background-image: url(./img/background-site-noite.png);
 --bgshadow: 0 4px 15px 0 rgb(255 0 224 / 75%);
 }
 
+div.error{
+  border-color: red;
+}
+
+div.success{
+  border-color:rgb(0, 199, 0);
+}
+
+div.focoAtual{
+  border-color: black;
+}
+
 .Login {
   width: 100vw;
   height: 100vh;
@@ -321,3 +333,4 @@ display: flex;
   color: rgb(253, 211, 21);
   text-shadow: 1px 1px orange;
 }
+

@@ -23,6 +23,39 @@ $(document).ready(function(){
     });
   });
 
+     // Input Senha 
+     function valid(element) {
+      $(element)
+        .closest('.divSpanLabel__divSenha')
+        .removeClass('error')
+        .addClass('success');
+    }
+    
+    function notValid(element) {
+      $(element)
+        .closest('.divSpanLabel__divSenha')
+        .removeClass('success')
+        .addClass('error');
+    }
+    
+    
+    $('#inputSenha').on('focus change', function() {
+      if (! $(this).val() || $(this).val().length === 0) {
+        return notValid($(this));
+      }
+      
+      valid($(this));
+    });
+
+    $(document).ready(function(){
+      $("#inputSenha").focus(function() {
+        $(this).parent().addClass("focoAtual")
+      });
+      $("#inputSenha").blur(function() {
+        $(this).parent().removeClass("focoAtual")
+      });
+    });
+
 
 /* Email */
 function validacaoEmail(field) {
@@ -80,7 +113,7 @@ function validacaoEmail(field) {
           }
         };
           
-        /*
+        
         function valid(element) {
           $(element)
             .closest('.divSpanLabel__div')
@@ -112,5 +145,7 @@ function validacaoEmail(field) {
             $(this).parent().removeClass("focoAtual")
           });
         });
-*/
+
+     
+
  
