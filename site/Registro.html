@@ -4,17 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="Registro.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="https://kit.fontawesome.com/8743b031e5.js" crossorigin="anonymous"></script>
     <title>Registro</title>
 </head>
 <body>
-<!-- Usuario -->
+    <div class="registro">
+    <form action="" class="formRegistro">
+    <!-- Usuario -->
+        <div class="divNome">
+            <label for="userNome" class="divLabelNome">Nome</label>
+        </div>
+                <div class="divNomeBar">
+                    <label for="userNome">
+                    <i class="uil uil-user"></i>
+                    </label>
+                    <input type="text" name="" id="userNome"  maxlength="40"  class="divInputNome">
+            </div>
+
 <!-- Nick no Minecraft -->
+<div class="divNickName">
+    <label for="userNickName" class="divLabelNickName">Nome de Usuario no Minecraft </label>   
+    </div>
+        <div class="divNickNameBar">
+            <label for="userNickName">
+            <img src="./img/R.png" alt="Minecraft-Icon" class="divImgIcon">
+            </label>
+            <input type="text" name="" id="userNickName" class="divInputNickName">
+</div>
+
 <!-- Email -->
+<div class="divEmail">
+    <label for="userEmail" class="divLabelEmail">Email</label>   
+    </div>
+        <div class="divEmailBar">
+            <label for="userEmail">
+            <i class="uil uil-at"></i>
+            </label>
+            <input type="email" name="" id="userEmail" class="divInputEmail">
+</div>
+
 <!-- Confirmar Email -->
+<div class="divCEmail">
+    <label for="userCEmail" class="divLabelCEmail">Confirmar Email</label>   
+    </div>
+        <div class="divCEmailBar">
+            <label for="userCEmail">
+            <i class="uil uil-at"></i>
+            </label>
+            <input type="email" name="" id="userCEmail" class="divInputCEmail">
+</div>
+
 <!-- Senha -->
+<div class="divSenha">
+    <label for="userSenha" class="divLabelSenha">Senha</label>   
+    </div>
+        <div class="divSenhaBar">
+            <label for="userSenha">
+            <i class="uil uil-lock"></i>
+            </label>
+            <input type="password" name="" id="userSenha" class="divInputSenha">
+</div>
+
 <!-- Confirmar Senha -->
+<div class="divCSenha">
+    <label for="userCSenha" class="divLabelCSenha">Confirmar Senha</label>   
+    </div>
+        <div class="divCSenhaBar">
+            <label for="userCSenha">
+            <i class="uil uil-lock"></i>
+            </label>
+            <input type="password" name="" id="userCSenha" class="divInputCSenha">
+</div>
+
 <!-- Termos -->
+<div class="divTermos">
+    <input type="checkbox" name="" id="termos" class="inputTermos">
+    <label for="termos">
+    <a href="Termos.html" class="linkTermos" target="_blank">Termos de Uso</a>
+</label>
+</div>
+
 <!-- Botao Registrar -->
+<div class="divBotaoRegistrar">
+    <button class="BotaoRegistrar">Registrar</button>
+</div>
+
+<!-- Ja tenho conta -->
+<div class="divLogin">
+    <label for="linkLogin" class="labelLogin">
+        <a id="linkLogin" class="linkLogin" href="Login.html"><span class="spanLogin">Já sou um treinador Pokémon</span></a>
+       </label>
+   </div>
+
+
+</form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="focoTotal.js"></script>
+<script src="horas.js"></script>r
+<script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
+<script type="text/javascript" src="../jquery.fullPage.js"></script>
 
 </body>
 </html>

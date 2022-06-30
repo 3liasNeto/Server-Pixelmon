@@ -44,6 +44,7 @@ div.focoAtual{
   padding: 4.3rem;
   background-color:var(--form-bgcolor);
   padding-bottom: 2.3em;
+  border-radius: 4px;
 }
 
 .fieldEmail {
@@ -112,10 +113,10 @@ div.focoAtual{
 
 .uil-check {
   font-size: 24px;
-  display: none;
+  display: flex;
 }
 .uil-exclamation-triangle{
-  display: none;
+  display: flex;
   font: 24px;
   color: red;
 }

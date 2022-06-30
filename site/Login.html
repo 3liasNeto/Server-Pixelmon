@@ -16,15 +16,15 @@
     <div class="Login">
         <form action="" name="formLogin" class="formLogin">
             <!--|||------------Email------------|||-->
-            <div class="fieldEmail" onmouseenter="onmos()">
+            <div class="fieldEmail">
            
                     <label for="inputEmail" class="fieldEmail labelEmail">Email</label>
                     <div class="divSpanLabel__div" id="div_Email">
-                        <span class="divSpanEmail"><i class="uil uil-at"></i></span>
+                        <span class="divSpanEmail"><label for="inputEmail"><i class="uil uil-at"></i></label></span>
                         <input type="email" placeholder="Email" onblur="validacaoEmail(formLogin.email)" 
                             id="inputEmail" name="Email" class="divInputEmail" required aria-required="true" />
-                        <span class="divSpanEmail__check"><i id="iconcheck" class="uil uil-check"></i><i class="uil uil-exclamation-triangle"></i></span>
-                        <!-- <i class="uil uil-eye-slash"></i> -->
+                        <span class="divSpanEmail__check"><i id="iconcheck" class="uil"></i></span>
+                        <!-- <i class="uil uil-eye-slash" uil-exclamation-triangle uil-check></i> -->
                         
                     </div>
             
@@ -34,7 +34,7 @@
             <div class="fieldSenha">
                     <label for="inputSenha" class="fieldSenha labelSenha">Senha</label>
                     <div class="divSpanLabel__divSenha" >
-                        <span class="divSpanSenha"><i class="uil uil-key-skeleton-alt"></i></span>
+                        <span class="divSpanSenha"><label for="inputSenha"><i class="uil uil-key-skeleton-alt"></i></label></span>
                         <input type="password" placeholder="Senha" class="divInputSenha" name="senha" minlength="8" required
                             aria-required="true" id="inputSenha" />
                         <span class="divSpanSenha__eye"><img src="img/olhos-cruzados.svg" class="eyePassword" id="olho"
@@ -65,10 +65,6 @@
                     </label>
                 </div>
 
-            <div class="divANConta">
-                <label class="divLSpan">
-            </label> 
-            </div>
 
             <div class="divANConta_icon">
                 <label for="" class="labelNConta_icon">
@@ -82,7 +78,7 @@
             </div>
         </form>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="horas.js"></script>
     <script type="text/javascript" src="../vendors/scrolloverflow.js"></script>

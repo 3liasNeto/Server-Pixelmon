@@ -24,21 +24,6 @@ $(document).ready(function(){
   });
 
      // Input Senha 
-     function valid(element) {
-      $(element)
-        .closest('.divSpanLabel__divSenha')
-        .removeClass('error')
-        .addClass('success');
-    }
-    
-    function notValid(element) {
-      $(element)
-        .closest('.divSpanLabel__divSenha')
-        .removeClass('success')
-        .addClass('error');
-    }
-    
-    
     $('#inputSenha').on('focus change', function() {
       if (! $(this).val() || $(this).val().length === 0) {
         return notValid($(this));
@@ -62,6 +47,7 @@ function validacaoEmail(field) {
     usuario = field.value.substring(0, field.value.indexOf("@"));
     dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
     
+    //Email Valido 
     if ((usuario.length >=1) &&
         (dominio.length >=3) &&
         (usuario.search("@")==-1) &&
@@ -72,10 +58,9 @@ function validacaoEmail(field) {
         (dominio.indexOf(".") >=1)&&
         (dominio.lastIndexOf(".") < dominio.length - 1)) {
 
-        document.getElementById('iconcheck').setAttribute('id', 'iconCheck');
+
         }
     else{
-    document.getElementById("msgemail").innerHTML="<font color='red'>E-mail inválido </font>";
     alert("E-mail invalido");
     }
    
@@ -101,13 +86,11 @@ function validacaoEmail(field) {
     document.onkeypress = function(evt) {
         var str = keyPressed(evt);
         
-        if((str == "@")&&
+        if((str == "@")||
           (str == ".")){
-            document.getElementById('iconcheck').setAttribute('id', 'iconCheck');
-            document.getElementsByClassName('uil uil-check').style.display = "flex";
+            document.getElementById('iconcheck').classList.toggle = 'uil-check';
           }else{
-            document.getElementsByClassName('uil uil-check').style.display = "none";
-            document.getElementsByClassName('cpuil-exclamation-triangle').style.display = "flex";
+            document.getElementById('iconcheck').classList.toggle = 'uil-exclamation-triangle';
 
 
           }
