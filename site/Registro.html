@@ -21,7 +21,7 @@
                     <label for="userNome">
                     <i class="uil uil-user"></i>
                     </label>
-                    <input type="text" name="" id="userNome"  maxlength="40"  class="divInputNome">
+                    <input type="text"  id="userNome"  maxlength="40"  class="divInputNome">
             </div>
 
 <!-- Nick no Minecraft -->
@@ -32,7 +32,7 @@
             <label for="userNickName">
             <img src="./img/R.png" alt="Minecraft-Icon" class="divImgIcon">
             </label>
-            <input type="text" name="" id="userNickName" class="divInputNickName">
+            <input type="text"  id="userNickName" class="divInputNickName">
 </div>
 
 <!-- Email -->
@@ -43,7 +43,7 @@
             <label for="userEmail">
             <i class="uil uil-at"></i>
             </label>
-            <input type="email" name="" id="userEmail" class="divInputEmail">
+            <input type="email"  id="userEmail" class="divInputEmail">
 </div>
 
 <!-- Confirmar Email -->
@@ -54,18 +54,20 @@
             <label for="userCEmail">
             <i class="uil uil-at"></i>
             </label>
-            <input type="email" name="" id="userCEmail" class="divInputCEmail">
+            <input type="email"  id="userCEmail" class="divInputCEmail">
 </div>
 
 <!-- Senha -->
 <div class="divSenha">
     <label for="userSenha" class="divLabelSenha">Senha</label>   
     </div>
-        <div class="divSenhaBar">
+        <div class="divSenhaBar" onblur="eyeSurge()">
             <label for="userSenha">
             <i class="uil uil-lock"></i>
             </label>
             <input type="password" name="" id="userSenha" class="divInputSenha">
+            <span class="divSpanSenha__eye"><img src="img/olhos-cruzados.svg" class="eyePassword" id="olho"
+                alt="Senha" /></span>
 </div>
 
 <!-- Confirmar Senha -->
@@ -77,6 +79,8 @@
             <i class="uil uil-lock"></i>
             </label>
             <input type="password" name="" id="userCSenha" class="divInputCSenha">
+            <span class="divSpanSenha__eye"><img src="img/olhos-cruzados.svg" class="eyePassword" id="olho-2"
+                alt="Senha" /></span>
 </div>
 
 <!-- Termos -->
@@ -99,6 +103,17 @@
        </label>
    </div>
 
+   
+   <div class="divANConta_icon">
+    <label for="" class="labelNConta_icon">
+        <div class="divNConta_linkGoogle">
+        <a href=""><img src="img/google_icon.png"class="googleReg" alt="google_reg"></a>
+    </div>
+    <div class="divNConta_linkFacebook">
+        <a href=""><img src="img/facebook_icon.png" class="facebookReg" alt="facebook_reg"></a>   
+    </div>
+    </label>
+</div>
 
 </form>
 </div>
