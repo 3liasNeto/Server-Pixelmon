@@ -344,10 +344,6 @@ display: flex;
 
 /* Mobile S - min width */
 @media only screen and (min-device-width: 320px) and (max-device-width:374px) {
-  .Login{
-    width: 90vw;
-  }
-  
   .formLogin{
     padding: 2rem;
   }
@@ -414,13 +410,13 @@ display: flex;
 .btnLogin{
 font-family: 'Helvética', sans-serif;
 font-weight: 400;
-font-size: 14px;
-width: 170px;
-height: 40px;
+font-size: 12px;
+width: 130px;
+height: 35px;
 }
 
 .btnLogin:hover{
-  font-size: 18px;
+  font-size: 15px;
 }
 
 
@@ -461,7 +457,7 @@ height: 40px;
 
 
 
-@media only screen  (min-device-width: 375px) and (max-device-width: 424px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 424px) {
   .formLogin{
     padding: 3rem;
   }
@@ -529,12 +525,12 @@ height: 40px;
 font-family: 'Helvética', sans-serif;
 font-weight: 400;
 font-size: 14px;
-width: 170px;
+width: 140px;
 height: 40px;
 }
 
 .btnLogin:hover{
-  font-size: 18px;
+  font-size: 14px;
 }
 
 
@@ -567,10 +563,214 @@ height: 40px;
 }
 
 
-@media only screen and (max-device-width: 425px) {
-  .text {
-    font-size: 16px;
+@media only screen and (min-device-width: 425px) and (max-device-width: 496px) {
+  .formLogin{
+    padding: 4rem;
   }
+  
+  .labelEmail {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .divSpanLabel__div {
+    width: 260px;
+    height: 40px;
+  }
+
+  .divInputEmail {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputEmail::placeholder{
+    font-size: 12px;
+  }
+  
+  .uil-at{
+    font-size: 20px;
+  }
+
+  .labelSenha {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .divSpanLabel__divSenha {
+    width: 260px;
+    height: 40px;
+  }
+  
+  
+  .uil-key-skeleton-alt {
+    font-size: 20px;
+  }
+  
+  .divInputSenha {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputSenha::placeholder{
+    font-size: 12px;
+  }
+  
+  .eyePassword{
+      width: 20px;
+  }
+
+  .div_RCheckBox{
+    width: 100%;
+    font-family: 'Helvética', sans-serif;
+    font-size: 12px;
+    color: var(--font-textcolor);
+  }
+  
+
+.btnLogin{
+font-family: 'Helvética', sans-serif;
+font-weight: 400;
+font-size: 14px;
+width: 150px;
+height: 40px;
+}
+
+.btnLogin:hover{
+  font-size: 18px;
+}
+
+
+
+/* Nova Conta */
+.divNConta{
+    color: var(--font-textcolor);
+    padding-bottom: 1.1rem;
+}
+
+/* Nova Conta Entra outras formas */
+
+.labelNConta{
+  font-family: 'Helvética', sans-serif;
+}
+
+
+.googleReg{
+  width: 40px;
+}
+
+.facebookReg{
+  width: 40px;
+}
+
+.LinkNAcc{
+  color: var(--font-textcolor);
+  font-size: 14px;
+}
+}
+
+@media only screen and (min-device-width: 497px) and (max-device-width: 767px) {
+  .formLogin{
+    padding: 4rem;
+  }
+  
+  .labelEmail {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .divSpanLabel__div {
+    width: 290px;
+    height: 40px;
+  }
+
+  .divInputEmail {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputEmail::placeholder{
+    font-size: 12px;
+  }
+  
+  .uil-at{
+    font-size: 20px;
+  }
+
+  .labelSenha {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .divSpanLabel__divSenha {
+    width: 290px;
+    height: 40px;
+  }
+  
+  
+  .uil-key-skeleton-alt {
+    font-size: 20px;
+  }
+  
+  .divInputSenha {
+    font-size: 12px;
+    height: 28px;
+  }
+  
+  .divInputSenha::placeholder{
+    font-size: 12px;
+  }
+  
+  .eyePassword{
+      width: 20px;
+  }
+
+  .div_RCheckBox{
+    width: 100%;
+    font-family: 'Helvética', sans-serif;
+    font-size: 13px;
+    color: var(--font-textcolor);
+  }
+  
+
+.btnLogin{
+font-family: 'Helvética', sans-serif;
+font-weight: 400;
+font-size: 14px;
+width: 150px;
+height: 40px;
+}
+
+.btnLogin:hover{
+  font-size: 18px;
+}
+
+
+
+/* Nova Conta */
+.divNConta{
+    color: var(--font-textcolor);
+    padding-bottom: 1.1rem;
+}
+
+/* Nova Conta Entra outras formas */
+
+.labelNConta{
+  font-family: 'Helvética', sans-serif;
+}
+
+
+.googleReg{
+  width: 40px;
+}
+
+.facebookReg{
+  width: 40px;
+}
+
+.LinkNAcc{
+  color: var(--font-textcolor);
+  font-size: 14px;
+}
 }
 
 @media only screen and (max-device-width: 768px) {
