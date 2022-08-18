@@ -1,0 +1,60 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(207, 207, 207); 
+}
+
+.TxT{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36.31px;
+    color: black;
+}
+
+.pxm-header {
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 300px;
+}
+
+/* Login Icon */
+.pxm-headerDiv {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 3rem 0rem 0rem;
+}
+
+.pxm-headerDiv-color{
+    background-color: #5459CE;
+    border: 15px solid transparent;
+    border-radius: 15px;
+}
+
+.pxm-header_div-img{
+    width: 37px;
+}
+
+/* Nav  */
+.pxm-headerNav{
+    display: flex;
+    background-color: white;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.pxm-header_nav-Titles{
+    padding: 0rem 45px 0rem 0rem;
+}
+
+.titles_Inicio{
+padding-left:168px ;
+}
