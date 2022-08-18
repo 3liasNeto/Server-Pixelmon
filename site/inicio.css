@@ -23,32 +23,38 @@ body{
 }
 
 /* Login Icon */
-.pxm-headerDiv {
+.pxm-headerDiv-Login {
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     padding: 1rem 3rem 0rem 0rem;
 }
 
-.pxm-headerDiv-color{
+.pxm-headerdivColor-Login{
     background-color: #5459CE;
     border: 15px solid transparent;
     border-radius: 15px;
 }
 
-.pxm-header_div-img{
+.pxm-header_divImg-Login{
     width: 37px;
 }
 
 /* Nav  */
 .pxm-headerNav{
-    display: flex;
     background-color: white;
-    height: 60px;
+}
+
+.pxm-headerNav-Div{
+    display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
+    height: 60px;
+}
+
+.pxm-headernavDiv-Titles{
+
 }
 
 .pxm-header_nav-Titles{
@@ -57,4 +63,38 @@ body{
 
 .titles_Inicio{
 padding-left:168px ;
+}
+
+/* Loja Icon */
+
+.pxm-headerDiv-Loja{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0rem 0rem 3rem 20rem;
+}
+
+
+.pxm-headerdivColor-Loja{
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #DF4B4B;
+    border: 15px solid transparent;
+    border-radius: 5px;
+    width: 170px;
+}
+
+.pxm-header_divImg-Loja{
+}
+
+.pxm-header_div_imgLink-Loja{
+    font-size: 30px;
+    color: black;
+}
+
+.pxm-headerdivLabel-Loja{
+    
 }
